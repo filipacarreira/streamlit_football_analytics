@@ -1,1 +1,1 @@
-Link to the dashboard: https://appextractimages.streamlit.app/
+Link to the dashboard: https://app-football-analytics.streamlit.app/
