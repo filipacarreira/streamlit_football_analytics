@@ -20,28 +20,28 @@ st.markdown("<h1 style='text-align: center; color: white;'>Perfis de Jogadores</
 
 st.write(
     """
-        A segunda parte deste exercício consistia na criação de perfis de jogadores, usando as métricas criadas anteriormente.
+        A segunda parte deste exercício consistia na criação de perfis de jogadores, recorri às métricas criadas anteriormente, 
+        como solicitado.
 
-        Mas vamos por partes... A primeira coisa a decidir foi que jogos usar para fazer esta análise. Como estamos sempre a ouvir que
-        futebol feminino e masculino são desportos completamente diferentes, para esta segmentação de jogadores, eu decidi
-        usar dados de ligas femininas e masculinas. Sei que pode parecer uma ideia estranha, mas a ideia era ver se realmente estas diferenças
-        eram tão carregadas que isso levaria à criação natural de clusters de homens e mulheres, separados, ou se estas diferenças a níveis
-        estatísticos acabavam por não fazer muita diferença, o que levaria à criação de clusters mistos.
+        Mas vamos por partes... A primeira coisa a decidir foi que jogos usar para fazer esta análise. Como estamos sempre a ouvir que 
+        futebol feminino e masculino são desportos completamente diferentes, para esta segmentação de jogadores decidi usar dados 
+        de ligas femininas e masculinas. Pode parecer uma ideia estranha, mas a ideia era ver se realmente estas diferenças eram tão 
+        carregadas que levariam à criação natural de clusters de homens e mulheres, separados, ou se estas diferenças, quando vistas 
+        estatísticamente acabavam por não fazer muita diferença, o que levaria à criação de clusters mistos.
 
         Tendo tomado esta decisão, restava decidir que jogos analisar. Para isso, fiz uma análise aos jogos e ligas que tinham eventos disponíveis
-        e constatei que, infelizmente, não ia ser possível usar jogos do mesmo ano. As únicas ligas onde isso era possível não eram do mesmo país
-        (Espanha e Inglaterra) e achei que isso ia tirar sentido aos resultados, porque normalmente países diferentes têm formas de jogar futebol
-        diferentes. 
+        e constatei que, infelizmente, não ia ser possível usar jogos do mesmo ano.As únicas ligas onde isso era possível fazer não eram do mesmo 
+        país (Espanha e Inglaterra), o que retira sentido aos resultados porque, normalmente, países diferentes têm
+        formas de jogar futebol diferentes.
 
-        Tendo isto em conta, decidi então usar:
+        Tendo isto em conta, decidi usar:
 
-        - Todos os jogos da FA Women's Super League, na época 2020/2021
-        - Todos os jogos da Premier League Masculina, na época 2015/2016
+        - Todos os jogos da FA Women's Super League, época 2020/2021
+        - Todos os jogos da Premier League Masculina, época 2015/2016
 
         Escolhidos os jogos, faltava decidir também que perfis analisar. Para este estudo decidi considerar 2 perfis principais de jogadores:
         defesas e avançados. Esta escolha prendeu-se com o facto de considerar que estes dois tipos de jogadores tèm características
-        muito diferentes, e por isso não faz sentido agrupá-los da mesma forma. Ficaram a faltar 2 grupos de jogadores, os médios e guarda
-        redes, mas infelizmente havia uma limitação de tempo e não deu para analisar tudo desta vez.
+        muito diferentes, e por isso não faz sentido agrupá-los da mesma forma.
 
         Tendo isto em conta, na imagem abaixo é possível ver os perfis de jogadores que considerei.
     """         
@@ -283,7 +283,7 @@ with tab1:
         """
             A análise da distribuição de género por cluster mostra um padrão interessante que contraria a minha expectativa inicial de 
             que era possível que se criassem clusters completos com um só género. O cluster 1, por exemplo tem uma ligeira predominância feminina (55.3%),
-            mas depois o cluster 3 já tem uma predominância masculina (72.6%), o que mostra que ao contrário da nossa intuição, as características de
+            mas depois o cluster 3 já tem uma predominância masculina (72.6%), o que mostra que, ao contrário da nossa intuição, as características de
             jogo de homens e mulheres e os padrões de desempenho que têm no futebol são suficientemente complexos para fazer com que jogadores de ambos os
             géneros possam partilhar perfis estatísticos similares dentro dos mesmos clusters
         """

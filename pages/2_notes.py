@@ -1,14 +1,15 @@
 import streamlit as st
 
-st.markdown("<h1 style='text-align: center; color: white;'>🔮 Trabalho Futuro - coisas que gostava de ter feito se tivesse mais tempo</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: white;'>Trabalho Futuro - Outras Análises que podiam ser feitas</h1>", unsafe_allow_html=True)
 
 
 st.markdown("<h2 style='text-align: center; color: white;'>Ferramenta de Procura de Jogadores</h2>", unsafe_allow_html=True)
 st.write(
     """
-        Uma possível evolução da dashboard seria criar uma funcionalidade de procura de jogadores personalizada: o utilizador podia
-        introduzir as características desejadas (ex: muitos remates, boa pressão, presença na área) e a ferramenta indicaria a que 
-        cluster esse perfil corresponderia, e alguns exemplos de jogadores que pertencessem a esse grupo.
+        Uma possível evolução da dashboard seria criar uma funcionalidade de procura de jogadores personalizada: 
+        o utilizador podia introduzir as características desejadas (ex: muitos remates, boa pressão, presença na área)
+        e a ferramenta indicaria a que cluster esse perfil corresponderia e alguns exemplos de jogadores que 
+        pertencessem a esse grupo.
     """
 )
 
@@ -50,7 +51,7 @@ st.markdown("<h2 style='text-align: center; color: white;'>Ponderações por Con
 st.write(
     """
         Alguns autores argumentam que não se deve comparar jogadores sem ter em conta o contexto tático ou competitivo em que jogam. 
-        Um possível trabalho futuro seria introduzir ponderadores que considerem variáveis como o treinador, a liga ou a fase da época, 
+        Um possível trabalho futuro seria introduzir ponderadores que considerem variáveis como o treinador, a liga ou a fase da época 
         de forma a refinar os perfis gerados e perceber como é que fatores 'externos' influenciam a performance e a forma de jogar dos jogadores
     """
 )

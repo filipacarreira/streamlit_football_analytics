@@ -9,9 +9,8 @@ st.markdown("<h1 style='text-align: center; color: white;'>Chelsea FCW - Reading
 
 st.write(
     '''
-        Nesta análise a ideia era usar dados de um jogo de uma liga de futebol feminina.
-
-        Decidi escolher um jogo da última jornada do campeonato FA Women\'s Super League na época 2020/2021.
+        A presente análise usa dados de um jogo de uma liga de futebol feminina, concretamente o jogo da última 
+        jornada do campeonato FA Women's Super League, na época 2020/2021.
 
         A escolha do jogo em concreto a usar foi feita tendo em conta os resultados finais dos jogos da última jornada.
         Havia um que se destacava claramente por ter um resultado mais "extremo": 5-0. Chelsea FCW - Reading WFC, no dia 9 de maio de 2019.
@@ -30,14 +29,14 @@ st.markdown("<h3 style='text-align: center; color: white;'>Métrica 1: Tempo de 
 
 st.write(
     '''
-        O objetivo do cálculo desta variável era perceber como este tempo se alterava ao longo do jogo e se,
-        por exemplo, no final do jogo este tempo aumentava, devido ao cansaço das jogadoras.
+        O objetivo do cálculo da variável era perceber como este tempo se alterava ao longo do jogo e se, no final do 
+        jogo, este tempo aumentava devido ao cansaço das jogadoras, por exemplo.
 
         Para calcular o Tempo de Recuperação (em segundos) considerei todos os casos nos dados em que a possessão
         de bola mudava e calculei os segundos entre as posses de bola da mesma equipa. 
 
-        Agregei os dados em intervalos de 5 minutos para tentar ter valores mais consistentes e perceber como evoluia
-        o tempo de recuperção ao longo do jogo.
+        Agregei os dados em intervalos de 5 minutos para ter valores mais consistentes e perceber como evoluiu o 
+        tempo de recuperção ao longo do jogo.
     '''
 )
 
@@ -114,7 +113,7 @@ st.markdown("<h3 style='text-align: center; color: white;'>Métrica 2: Conduçõ
 
 st.write(
     '''
-        O objetivo de calcular esta métrica era perceber o quão eficientes as equipas são ao longo do jogo e também
+        O objetivo de calcular esta métrica é perceber o quão eficientes as equipas são ao longo do jogo e também
         quantas oportunidades de perigo criam em cada minuto da partida
 
         Para perceber quantas vezes os jogadores levavam a bola para a zona de ataque, considerei apenas um tipo de eventos: carry 
@@ -245,7 +244,7 @@ st.write(
 
         - Entre os minutos 40 e 80, o Chelsea tem vários picos de entradas perigosas, mantendo ao mesmo tempo um tempo de 
         recuperação de bola relativamente baixo.
-        - Isto sugere que a equipa tem uma estratégia eficaz de pressão pós-perda de bola (counter-pressing), o que também mantém a pressão ofensiva.
+        - O Chelsea tem uma estratégia eficaz de pressão pós-perda de bola (counter-pressing), o que também mantém a pressão ofensiva.
         - O baixo tempo de recuperação provavelmente é consequência de uma equipa eficiente na pressão alta — recuperam a bola rapidamente 
         e entram imediatamente na zona de ataque.
 
@@ -253,7 +252,7 @@ st.write(
 
         - O tempo de recuperação frequentemente ultrapassa os 100 segundos, especialmente entre os minutos 20 e 40, e as entradas perigosas 
         ficam baixas ou estáveis.
-        - Isto quer dizer que o Reading demora a recuperar a posse de bola e que, quando o faz, não consegue converter essa
+        - O Reading demora a recuperar a posse de bola e que, quando o faz, não consegue converter essa
         recuperação em ações ofensivas, já que não há um aumento relevante das entradas na zona de ataque.
         - O Reading parece ter dificuldades nas transições ou não ter uma estrutura suficiente para aproveitar a recuperação da posse de bola.
         Isso pode mostrar que existem problemas na construção ofensiva ou que a equipa toma uma postura defensiva mais recuada.
