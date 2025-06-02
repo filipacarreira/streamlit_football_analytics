@@ -461,7 +461,7 @@ with tab2:
         "Este tab detalha os clusters dos avançados, e ajuda a interpretar os perfis ofensivos encontrados."
     )
 
-    with st.expander('**Cluster 0: "Atacantes de Apoio com Pressão Alta"**'):
+    with st.expander('**Cluster 0: "Avançados de Apoio com Pressão Alta"**'):
         st.markdown("""
         | Métrica                           | Valor        | Comentário                                                     |
         | --------------------------------- | ------------ | -------------------------------------------------------------- |
@@ -479,7 +479,7 @@ with tab2:
         * Exemplo de perfil: **Bukayo Saka, Bernardo Silva, Ángel Di María**.
         """)
 
-    with st.expander('**Cluster 1: "Atacantes de Baixo Impacto" (baixa participação ou suplentes)**'):
+    with st.expander('**Cluster 1: "Avançados de Baixo Impacto" (baixa participação ou suplentes)**'):
         st.markdown("""
         | Métrica                                         | Valor       | Comentário |
         | ----------------------------------------------- | ----------- | ---------- |
