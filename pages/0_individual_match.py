@@ -113,20 +113,20 @@ st.markdown("<h3 style='text-align: center; color: white;'>Métrica 2: Conduçõ
 
 st.write(
     '''
-        O objetivo de calcular esta métrica é perceber o quão eficientes as equipas são ao longo do jogo e também
-        quantas oportunidades de perigo criam em cada minuto da partida
+        O objetivo do cálculo desta métrica é perceber o quão eficientes as equipas são ao longo do jogo, além de perceber
+        quantas oportunidades de perigo criam em cada minuto.
 
-        Para perceber quantas vezes os jogadores levavam a bola para a zona de ataque, considerei apenas um tipo de eventos: carry 
+        Para perceber quantas vezes os jogadores levam a bola para a zona de ataque, considerei apenas um tipo de eventos: "carry" 
         (conduzir a bola). Depois usei a localização desses eventos para perceber em que zona do campo os jogadores estavam. 
         Criei dois eventos:
 
-        - Entradas na zona de ataque (terceira "parte" do campo - x > 80 na imagem abaixo)
+        - Entradas na zona de ataque (terceira "parte" do campo - zona de ataque: x > 80 na imagem abaixo)
         - Entradas na grande área (x >= 102 e 18 <= y <= 62)
     '''
 )
 
 slide1 = Image.open("images/coordinates.png")
-col1, col2, col3 = st.columns([1, 3, 1])  # Adjust the ratios if needed
+col1, col2, col3 = st.columns([1, 3, 1])
 
 with col2:
     st.image(slide1, use_container_width=True)
@@ -138,7 +138,6 @@ entry_counts['hover_text'] = (
     'Número de Entradas: ' + entry_counts['entries'].astype(str)
 )
 
-# Create Plotly figure
 fig = px.line(
     entry_counts,
     x='minute',
@@ -148,7 +147,6 @@ fig = px.line(
     hover_data='hover_text',
 )
 
-# Atualizar layout para português e estilo
 fig.update_layout(
     title='Conduções até o Terço Final e Grande Área por Minuto',
     xaxis_title='Minuto',
@@ -158,7 +156,6 @@ fig.update_layout(
     paper_bgcolor='rgba(0,0,0,0)',
 )
 
-# Mostrar apenas o texto customizado no hover
 fig.update_traces(hovertemplate='%{customdata[0]}')
 
 st.plotly_chart(fig, use_container_width=True)
@@ -187,7 +184,7 @@ recovery_max = two_metrics['recovery_time'].max() + 1
 
 teams = two_metrics['team'].unique()
 n_cols = 2
-n_rows = -(-len(teams) // n_cols)  # Ceiling division
+n_rows = -(-len(teams) // n_cols)
 
 fig = sp.make_subplots(
     rows=n_rows,
@@ -217,7 +214,6 @@ for idx, team in enumerate(teams):
         row=row, col=col, secondary_y=True
     )
 
-    # Set consistent axes
     fig.update_yaxes(range=[danger_min, danger_max], row=row, col=col, secondary_y=False)
     fig.update_yaxes(range=[recovery_min, recovery_max], row=row, col=col, secondary_y=True)
     fig.update_xaxes(title_text="Minuto do jogo", row=row, col=col)
